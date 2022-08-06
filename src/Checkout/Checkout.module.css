@@ -1,0 +1,25 @@
+.checkout{
+    display: flex;
+    padding: 20px;
+    background-color: ghostwhite;
+    height: max-content;
+}
+.checkoutTitle{
+    padding: 10px;
+    border-bottom: 3px ridge darkmagenta;
+}
+.checkoutAd{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.checkoutLeft{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.checkoutWrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

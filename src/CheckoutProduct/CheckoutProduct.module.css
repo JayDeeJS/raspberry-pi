@@ -1,0 +1,41 @@
+.checkoutProduct{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-bottom: 2px solid darkmagenta;
+}
+.checkoutProduct > img{
+    object-fit: cover;
+    width: 250px;
+    height: 240px;
+    border-radius: 20px;
+}
+.checkoutProductInfo{
+    padding-left: 20px;
+}
+.checkoutProductInfo > button{
+    background-color: #080c55;
+    color: ghostwhite;
+    border-color: purple rebeccapurple mediumpurple;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.checkoutProductInfo > button:hover{
+    box-shadow: 0 0 3px 2px rgba(7,30,74,0.91);
+}
+.checkoutProductPrice{
+    margin-top: 5px;
+}
+.checkoutProductRating{
+    display: flex;
+    margin-bottom: 7px;
+}
+.title{
+    color: purple;
+    font-weight: 900;
+}
+.rating{
+    font-style: italic;
+    margin-right: 5px;
+}
