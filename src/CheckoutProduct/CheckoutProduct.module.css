@@ -6,8 +6,8 @@
 }
 .checkoutProduct > img{
     object-fit: cover;
-    width: 250px;
-    height: 240px;
+    width: 310px;
+    height: 300px;
     border-radius: 20px;
 }
 .checkoutProductInfo{

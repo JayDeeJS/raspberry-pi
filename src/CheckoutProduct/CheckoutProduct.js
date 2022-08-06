@@ -3,7 +3,7 @@ import styles from './CheckoutProduct.module.css';
 import {useStateValue} from "../StateProvider/StateProvider";
 
 const CheckoutProduct = ({id, title, image, price, rating}) => {
-    const [dispatch] = useStateValue();
+    const [{ basket }, dispatch] = useStateValue();
 
     const removeFromUmbrella = () => {
         dispatch({
