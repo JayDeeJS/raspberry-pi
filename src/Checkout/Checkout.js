@@ -15,15 +15,15 @@ const Checkout = () => {
             <div className={styles.checkout}>
                 <div className={styles.checkoutLeft}>
                     <img className={styles.checkoutAd}
-                         src="https://images.unsplash.com/photo-1626428091984-48f9ffbf927c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1233&q=80"
+                         src="https://korben.info/app/uploads/2018/03/rpi3B.jpg"
                          alt="checkout-ad"/>
                     {basket?.length === 0
                         ? <div>
-                            <h2 className={styles.checkoutTitle}>Your Shopping Umbrella is empty</h2>
-                            <p>You have no items in your Umbrella. Click "Add to umbrella" to add the item.</p>
+                            <h2 className={styles.checkoutTitle}>Your Shopping Basket is empty</h2>
+                            <p>You have no items in your Basket. Click "Add to basket" to add the item.</p>
                         </div>
                         : <div>
-                            <h2 className={styles.checkoutTitle}>Your Shopping Umbrella</h2>
+                            <h2 className={styles.checkoutTitle}>Your Shopping Basket</h2>
 
                             {/*List of all of the Checkout items*/}
                             <div className={styles.checkoutWrapper}>

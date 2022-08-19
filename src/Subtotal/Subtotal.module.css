@@ -6,8 +6,8 @@
     height: 100px;
     padding: 20px;
     margin-left: 15px;
-    background-color: steelblue;
-    border: 1px solid darkmagenta;
+    background-color: lightsteelblue;
+    border: 1px solid deepskyblue;
     border-radius: 5px;
     position: sticky;
     top: 90px;
@@ -20,12 +20,11 @@
     margin-right: 5px;
 }
 .subtotal > button{
-    background-color: #080c55;
-    color: ghostwhite;
-    border-color: purple rebeccapurple mediumpurple;
+    background-color: lightsalmon;
+    border-color: darksalmon salmon lightsalmon;
     border-radius: 5px;
     cursor: pointer;
 }
 .subtotal > button:hover{
-    box-shadow: 0 0 3px 2px rgba(7,30,74,0.91);
+    box-shadow: 0 0 3px 2px salmon;
 }

@@ -1,5 +1,5 @@
 nav{
-    background-color: #080c55;
+    background-color: lightcoral;
     display: flex;
     align-items: center;
     position: sticky;
@@ -22,7 +22,13 @@ nav img{
 .headerSearch > input{
     border: 1px solid mediumpurple;
     border-radius: 5px;
+    height: 25px;
     width: 96%;
+}
+.headerSearch > button{
+    height: 29px;
+    display: flex;
+    align-items: center;
 }
 .headerNav{
     display: flex;
@@ -43,6 +49,7 @@ nav img{
 .headerOptionBasket{
     display: flex;
     align-items: center;
+    padding-top: 5px;
 }
 .headerOptionBasketCount{
     font-size: 14px;

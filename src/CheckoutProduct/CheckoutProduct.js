@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './CheckoutProduct.module.css';
 import {useStateValue} from "../StateProvider/StateProvider";
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 const CheckoutProduct = ({id, title, image, price, rating}) => {
     const [{ basket }, dispatch] = useStateValue();
@@ -27,7 +28,7 @@ const CheckoutProduct = ({id, title, image, price, rating}) => {
                     {Array(rating)
                         .fill()
                         .map((_) => (
-                            <p>☂︎</p>
+                            <StarBorderIcon/>
                         ))}
                 </div>
                 <button onClick={removeFromUmbrella}>Remove from umbrella</button>

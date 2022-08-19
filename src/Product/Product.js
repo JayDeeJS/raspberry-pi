@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Product.module.css';
 import {useStateValue} from "../StateProvider/StateProvider";
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 const Product = ({id, title, image, price, rating}) => {
     const [{}, dispatch] = useStateValue();
@@ -31,12 +32,12 @@ const Product = ({id, title, image, price, rating}) => {
                     {Array(rating)
                         .fill()
                         .map((_) => (
-                            <p>☂︎</p>
+                            <StarBorderIcon/>
                         ))}
                 </div>
             </div>
             <img src={image} alt="flask"/>
-            <button onClick={addToBasket}>Add to umbrella</button>
+            <button onClick={addToBasket}>Add to basket</button>
         </div>
     );
 };
