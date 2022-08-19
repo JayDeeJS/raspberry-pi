@@ -1,11 +1,12 @@
 import React, {useEffect} from "react";
 import './App.css';
 import {Routes, Route} from "react-router-dom";
+import {useStateValue} from "./StateProvider/StateProvider";
+import {auth} from "./firebase/firebase";
+import {Toaster} from "react-hot-toast";
 import Home from "./Home/Home";
 import Checkout from "./Checkout/Checkout";
 import Login from "./Login/Login";
-import {useStateValue} from "./StateProvider/StateProvider";
-import {auth} from "./firebase/firebase";
 
 function App() {
     const [{ user }, dispatch] = useStateValue();
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/" element={<Home/>}/>
             </Routes>
+            <Toaster/>
         </div>
     );
 }

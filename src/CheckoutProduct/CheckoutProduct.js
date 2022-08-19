@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './CheckoutProduct.module.css';
 import {useStateValue} from "../StateProvider/StateProvider";
+import toast from "react-hot-toast";
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 const CheckoutProduct = ({id, title, image, price, rating}) => {
@@ -10,6 +11,17 @@ const CheckoutProduct = ({id, title, image, price, rating}) => {
         dispatch({
             type: 'REMOVE_FROM_UMBRELLA',
             id: id
+        });
+        toast.success(`${title} has been removed from your Cart!`, {
+            style: {
+                border: '2px solid lightsalmon',
+                padding: '16px',
+                color: 'salmon',
+            },
+            iconTheme: {
+                primary: 'coral',
+                secondary: '#e7f13b',
+            },
         });
     };
 

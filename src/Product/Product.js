@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Product.module.css';
 import {useStateValue} from "../StateProvider/StateProvider";
+import toast from "react-hot-toast";
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 const Product = ({id, title, image, price, rating}) => {
@@ -17,6 +18,17 @@ const Product = ({id, title, image, price, rating}) => {
                 rating: rating,
             }
         })
+        toast.success(`${title} has been added to your Cart!`, {
+            style: {
+                border: '2px solid #d1db17',
+                padding: '16px',
+                color: '#e66322',
+            },
+            iconTheme: {
+                primary: '#14e040',
+                secondary: '#e7f13b',
+            },
+        });
     }
 
     return (
